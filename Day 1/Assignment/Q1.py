@@ -1,3 +1,6 @@
+import sys
+
+
 def reverse_array(arr):
     # reverse the array using slicing
     # copies and returns the copy instead of in-place reversing
@@ -24,18 +27,21 @@ def reverse_array(arr):
 noOfElements = None
 while noOfElements is None:
     try:
-        noOfElements = int(
-            input("Enter the number of elements in the array: "))
+        noOfElements = int(input())
     except ValueError:  # if the input is not an integer
         # prompt the user to enter an integer
         print("Invalid input. Please enter an integer.")
+
 # empty list/array initialization
 arr = []
 # enter the elements of the array
-for i in range(noOfElements + 1):
-    while i > len(arr):
+elements = input().split()
+for i in range(noOfElements):
+    value = None
+    while value is None:
         try:
-            arr.append(int(input("Enter the element: ")))
+            value = int(elements[i])
+            arr.append(value)
         except ValueError:
             # prompt the user to enter an integer
             print("Invalid input. Please enter an integer.")

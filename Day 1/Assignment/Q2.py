@@ -1,3 +1,4 @@
+# Q2
 # node of a linked list, having data and a pointer to the next node
 class node:
     def __init__(self, data):

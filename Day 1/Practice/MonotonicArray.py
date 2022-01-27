@@ -1,3 +1,4 @@
+# Practice question one
 # A function that takes in an array of integers
 # and returns True if the array is monotonic and False otherwise.
 # The array is monotonic if it is either strictly increasing or strictly decreasing.
